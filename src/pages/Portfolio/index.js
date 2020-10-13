@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import CLI_Image from '../../images/cli-background.jpg';
 
 export default function Portfolio() {
     const [activeTab, setActiveTab] = useState(0);
@@ -10,8 +11,8 @@ export default function Portfolio() {
                 <div className="projects-grid">
                     {/* Project 1 */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: 'url(./images/cli-background.jpg) center / cover' }}>
-                            CLI App #1
+                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: `url(${CLI_Image}) center / cover` }}>
+                            CLI App #
                     </CardTitle>
                         <CardText>
                             This is first CLI App
@@ -26,7 +27,7 @@ export default function Portfolio() {
                     </Card>
                     {/* Project 2 */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: 'url(./images/cli-background.jpg) center / cover' }}>
+                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: `url(${CLI_Image}) center / cover`  }}>
                             CLI App #2
                     </CardTitle>
                         <CardText>
@@ -42,7 +43,7 @@ export default function Portfolio() {
                     </Card>
                     {/* Project 3 */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: 'url(./images/cli-background.jpg) center / cover' }}>
+                        <CardTitle style={{ color: '#fff', fontWeight: 'bolder', height: '175px', background: `url(${CLI_Image}) center / cover`  }}>
                             CLI App #3
                     </CardTitle>
                         <CardText>
